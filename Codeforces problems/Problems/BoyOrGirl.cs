@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Codeforces_problems.Problems
 {
-    internal class BoyOrGirl
+    public class BoyOrGirl
     {
+        public static void Solve()
+        {
+            string username = Console.ReadLine();
+            int uniqueCharCount = username.Distinct().Count();
+            if (uniqueCharCount % 2 == 0)
+            {
+                Console.WriteLine("CHAT WITH HER!");
+            }
+            else
+            {
+                Console.WriteLine("IGNORE HIM!");
+            }
+        }
     }
 }

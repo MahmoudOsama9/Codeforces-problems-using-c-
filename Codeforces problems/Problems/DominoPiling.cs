@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Codeforces_problems.Problems
 {
-    internal class DominoPiling
+    public class DominoPiling
     {
+        public static void Solve()
+        {
+            string[] input = Console.ReadLine().Split();
+            int n = int.Parse(input[0]);
+            int m = int.Parse(input[1]);
+            int maxDominoes = (n * m) / 2;
+            Console.WriteLine(maxDominoes);
+        }
     }
 }
