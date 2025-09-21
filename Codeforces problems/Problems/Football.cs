@@ -9,29 +9,40 @@ namespace Codeforces_problems.Problems
     {
         public static void Solve()
         {
-            int input = int.Parse(Console.ReadLine());
-            int onescounters = 0;
-            int zerocounters = 0;
-            while (input > 0) { 
-                if (input % 10 == 1) { onescounters++; if (onescounters == 7) break; }
-                else if (input % 10 == 0) { zerocounters++; if (zerocounters == 7) break; }
-                else { onescounters = 0; zerocounters = 0; }
-                input /= 10;
+            string s = Console.ReadLine();
+
+            int consecutiveOnes = 0;
+            int consecutiveZeros = 0;
+            bool dangerous = false;
+
+            foreach (char c in s)
+            {
+                if (c == '1')
+                {
+                    consecutiveOnes++;
+                    consecutiveZeros = 0;
+                }
+                else if (c == '0')
+                {
+                    consecutiveZeros++;
+                    consecutiveOnes = 0;
+                }
+
+                if (consecutiveOnes >= 7 || consecutiveZeros >= 7)
+                {
+                    dangerous = true;
+                    break;
+                }
             }
-            if (zerocounters == 7) { Console.WriteLine("YES"); }
-            else { Console.WriteLine("NO"); }
-            //for (int i = 0; i < k; i++)
-            //{
-            //    if (n % 10 == 0)
-            //    {
-            //        n /= 10;
-            //    }
-            //    else
-            //    {
-            //        n -= 1;
-            //    }
-            //}
-            //Console.WriteLine(n);
+
+            if (dangerous)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
         }
     }
 }
