@@ -6,7 +6,7 @@ namespace Codeforces_problems
     {
         static void Main(string[] args)
         {
-            BeautifulYear.Solve();
+            Hulk.Solve();
         }
     }
 }

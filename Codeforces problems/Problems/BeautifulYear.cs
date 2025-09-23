@@ -49,11 +49,6 @@ namespace Codeforces_problems.Problems
 
             Console.WriteLine(nextBeautifulYear);
 
-
-
-
-
-
         }
     }
 }
