@@ -32,7 +32,7 @@ namespace Codeforces_problems.Problems
 
             }
 
-            feelings.Append("it");
+            feelings.Append(" it");
 
             Console.WriteLine(feelings);
         }
