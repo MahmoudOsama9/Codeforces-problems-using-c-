@@ -10,8 +10,8 @@ namespace Codeforces_problems.Problems
     {
         public static void Solve()
         {
-            string num1 = Console.ReadLine();
-            string num2 = Console.ReadLine();
+            string num1 = Console.ReadLine()!;
+            string num2 = Console.ReadLine()!;
             StringBuilder result = new StringBuilder();
 
             for (int i = 0; i < num1.Length; i++)
