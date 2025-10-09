@@ -6,7 +6,7 @@ namespace Codeforces_problems
     {
         static void Main(string[] args)
         {
-            Hulk.Solve();
+            I_love__username_.Solve();
         }
     }
 }
