@@ -11,6 +11,7 @@ namespace Codeforces_problems.Problems
     {
         public static void Solve()
         {
+
             int n = int.Parse(Console.ReadLine());
 
             int sumX = 0;
