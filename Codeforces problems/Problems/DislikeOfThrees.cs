@@ -22,11 +22,11 @@ namespace Codeforces_problems.Problems
                 currentNumber++;
             }
 
-            int t = int.Parse(Console.ReadLine());
+            int t = int.Parse(Console.ReadLine()!);
 
             for (int i = 0; i < t; i++)
             {
-                int k = int.Parse(Console.ReadLine());
+                int k = int.Parse(Console.ReadLine()!);
 
                 Console.WriteLine(likedNumbers[k - 1]);
             }
